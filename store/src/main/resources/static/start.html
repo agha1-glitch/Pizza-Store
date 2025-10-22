@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Pan Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+     <!-- Header mit Logo -->
+  <header>
+    <img src="./public/logo.png" alt="Logo" class="logo" width="400" height="100">
+  </header>
+
+
+
+  <!--Adresse-->
+  <main class="Adresse">
+   <form id="addressForm" onsubmit="checkDistance(event)">
+    <fieldset>
+      <legend>Lieferadresse</legend>
+      <label>
+      Name: 
+      <input type="text" id="kunde-name" name="name" required>
+    </label>
+    <label>
+      Rufnummer: 
+      <input type="tel" id="kunde-rufnummer" name="rufnummer" required pattern="[0-9+\-\s]{6,}">
+    </label>
+      <label>Straße: <input type="text" id="street" required></label><br>
+      <label>PLZ: <input type="text" id="zip" required></label><br>
+      <label>Stadt: <input type="text" id="city" required></label><br>
+      <button type="submit">Entfernung berechnen</button>
+    </fieldset>
+  </form>
+  
+  <p id="result"></p>
+  </main>
+
+     <script src="start.js"></script>
+     <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header>
+    <img src="./public/logo.png" alt="Logo" class="logo" width="400" height="200">
+  </header>
+  <p id="pizza-info"></p>
+  <h1>Extras & Saucen wählen</h1>
+  
+
+  <form onsubmit="addExtras(event)">
+    <fieldset class="f">
+      <legend>Grössen</legend>
+      <label><input type="checkbox" name="grosse" value="Klein">Klein</label><br>
+      <label><input type="checkbox" name="grosse" value="Mittel">Mittel</label><br>
+      <label><input type="checkbox" name="grosse" value="Gross">Gross</label><br>
+    </fieldset>
+    <fieldset class="f">
+      <legend>Veggie Extras</legend>
+      <label><input type="checkbox" name="Veggie-extras" value="Champignon">Champignon</label><br>
+      <label><input type="checkbox" name="Veggie-extras" value="Oliven"> Oliven</label><br>
+      <label><input type="checkbox" name="Veggie-extras" value="Zwiebeln"> Zwiebeln</label><br>
+      
+      <label><input type="checkbox" name="Veggie-extras" value="peproni">peproni</label><br>
+      <label><input type="checkbox" name="Veggie-extras" value="Jelapenius">Jelapenius</label><br>
+      <label><input type="checkbox" name="Veggie-extras" value="Broccoli">Broccoli</label><br>
+    
+      <label><input type="checkbox" name="Veggie-extras" value="Tomaten">Tomaten</label><br>
+      <label><input type="checkbox" name="Veggie-extras" value="Paprika">Paprika</label><br>
+      <label><input type="checkbox" name="Veggie-extras" value="Mais">Mais</label><br>
+      
+      <label><input type="checkbox" name="Veggie-extras" value="Ananas">Ananas</label><br>
+    </fieldset>
+        <fieldset class="f">
+      <legend>Meat Extras</legend>
+      <label><input type="checkbox" name="Meat-extras" value="Hanchen">Hanchen</label><br>
+      <label><input type="checkbox" name="Meat-extras" value="Sucuk"> Sucuk</label><br>
+      <label><input type="checkbox" name="Meat-extras" value="Pastirma">Pastirma</label><br>
+      
+      <label><input type="checkbox" name="Meat-extras" value="Bacon">Bacon</label><br>
+      <label><input type="checkbox" name="Meat-extras" value="Peperoni-Salami">Peperoni Salami</label><br>
+      <label><input type="checkbox" name="Meat-extras" value="Salami">Salami</label><br>
+    </fieldset>
+
+    <fieldset class="f">
+      <legend>Pizza Saucen</legend>
+      <select name="sauce">
+        <option value="Tomatensauce">Tomatensauce</option>
+        <option value="Knoblauch">Hollandaise</option>
+        <option value="BBQ">BBQ</option>
+        <option value="Ohne">Chili-sauce</option>
+      </select>
+    </fieldset>
+
+  <fieldset>
+    <legend>Saucen wählen</legend>
+
+    <label>
+      Knoblauchsauce:
+      <input type="number" name="knoblauch" min="0" value="0">
+    </label><br>
+
+    <label>
+      Scharfe Sauce:
+      <input type="number" name="scharf" min="0" value="0">
+    </label><br>
+
+    
+  </fieldset>
+
+    
+
+    <button type="submit">Zum Warenkorb hinzufügen</button>
+  </form>
+
+  
+   <!-- Warenkorb -->
+  <section id="warenkorb">
+    <h2 id="warenkorb">🛒 Warenkorb</h2>
+    <section id="Articles">
+
+    </section>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+</body>
+
+</html>

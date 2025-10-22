@@ -1,0 +1,151 @@
+/* Farben: 60% Rot, 30% Weiß, 10% Schwarz */
+:root {
+  --rot: #c40000;
+  --weiss: #ffffff;
+  --schwarz: #000000;
+}
+
+/* Body Hintergrund in Rot (60%) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--rot);
+  color: var(--schwarz);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header mit Logo */
+header {
+  background-color: var(--weiss);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.logo {
+  max-width: 150px;
+}
+
+/* Produkt-Bereich */
+.produkte {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+/* Einzelnes Produkt-Kästchen */
+.produkt {
+  background-color: var(--weiss);
+  border: 2px solid var(--schwarz);
+  border-radius: 12px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.produkt:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+button {
+  background-color: var(--rot);
+  color: var(--weiss);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--schwarz);
+  color: var(--weiss);
+}
+h3{
+    font-size: 50px;
+}
+#bestellbutton{
+  font-size: 50px;
+  border-color: #000000;
+  background-color: #000;
+}
+#warenkorb{
+  font-size: 50px;
+}
+/* Container nimmt ganze Fläche */
+.Adresse {
+  width: 100%;
+  height: 100vh; /* nimmt die volle Höhe */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+/* Formular */
+.Adresse form {
+  width: 100%;
+  max-width: 800px; /* maximale Breite, sonst zu groß */
+  padding: 20px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* Fieldset */
+.Adresse fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* Label + Inputs */
+.Adresse label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.Adresse input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+/* Button */
+.Adresse button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Adresse button:hover {
+  background: darkred;
+}
+
+/* Ergebnis-Anzeige */
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}

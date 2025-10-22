@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+   <!-- Header mit Logo -->
+  <header>
+    <img src="./public/logo.png" alt="Logo" class="logo" width="400" height="100">
+  </header>
+
+
+
+    <p id="Entfernung"></p>
+
+ 
+
+  
+  
+  
+
+
+
+ <h3>Vorspeisen</h3>
+  
+  <main class="produkte">
+      <div class="produkt">
+        <img src="./public/mss_knoblauchbrot-kase-4-stuck_ilt.png" alt="Knoblauchbrot" width="200" height="200">
+        <h2>Knoblauchbrot</h2>
+        <form onsubmit="hinzufugen(event, 'Knoblauchbrot' , 3 , './public/mss_knoblauchbrot-kase-4-stuck_ilt.png')">
+        <button type="submit">Bestellen</button>
+        </form>    
+      </div>
+      <div class="produkt">
+        <img src="./public/mss_knoblauchbrot-tomate-mozzarella-4-stuck_1mr.png" alt="Knoblauchbrot-tomate" width="200" height="200">
+        <h2>Knoblauchbrot Tomate</h2>
+        <form onsubmit="hinzufugen(event, 'Knoblauchbrot-tomate' , 3.5 , './public/mss_knoblauchbrot-tomate-mozzarella-4-stuck_1mr.png')">
+        <button type="submit">Bestellen</button>
+        </form>    
+      </div>
+      
+      <div class="produkt">
+        <img src="./public/mss_knoblauchbrot-bacon-cheese-4-stuck_o5c.png" alt="Knoblauchbrot-bacon" width="200" height="200">
+        <h2>Knoblauchbrot Bacon</h2>
+        <form onsubmit="hinzufugen(event, 'Knoblauchbrot-bacon' , 4 , './public/mss_knoblauchbrot-bacon-cheese-4-stuck_o5c.png')">
+        <button type="submit">Bestellen</button>
+        </form>    
+      </div>
+        <div class="produkt">
+        <img src="./public/mss_chili-cheese-nuggets-6-stuck_r5u.png" alt="Chili-chease" width="200" height="200">
+        <h2>Chili Chease</h2>
+        <form onsubmit="hinzufugen(event, 'Chili-chease' , 4 , './public/mss_chili-cheese-nuggets-6-stuck_r5u.png')">
+        <button type="submit">Bestellen</button>
+        </form>    
+      </div>
+      
+        <div class="produkt">
+        <img src="./public/mss_potato-wedges_so6.png" alt="Potato" width="200" height="200">
+        <h2>Potato</h2>
+        <form onsubmit="hinzufugen(event, 'Potato' , 4 , './public/mss_potato-wedges_so6.png')">
+        <button type="submit">Bestellen</button>
+        </form>    
+      </div>
+      
+        <div class="produkt">
+        <img src="./public/mss_mozzarella-sticks-6-stuck_yhp.png" alt="Mozzarella-sticks" width="200" height="200">
+        <h2>Mozzarella Sticks</h2>
+        <form onsubmit="hinzufugen(event, 'Mozzarella-sticks' , 4 , './public/mss_mozzarella-sticks-6-stuck_yhp.png')">
+        <button type="submit">Bestellen</button>
+        </form>    
+      </div>
+
+  </main>
+
+
+  <h3>Pizzen</h3>
+  <main class="produkte">
+        
+   <div class="produkt">
+  <img src="./public/mss_pizza-margherita-klein-o-17cm_qus.png" alt="Margherita" width="200" height="200">
+  <h2>Margherita</h2>
+  <p>Klassisch und lecker.</p>
+
+  <!-- Größen -->
+  <form id="pizzaForm" action="extras.html" method="get">
+  <input type="hidden" name="pizza" value="Margherita">
+
+  <button type="submit">Grössen & Extras & Saucen wählen</button>
+  </form>
+  </div>
+  
+    <div class="produkt">
+        <img src="./public/mss_pizza-salami-klein-o-17cm_pdj.png" alt="Salami" width="200" height="200">
+        <h2>Salami</h2>
+        <p>Herzhaft und würzig.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Salami">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+    <div class="produkt">
+        <img src="./public/mss_pizza-alaska-klein-o-17cm_uh6.png" alt="Alaska" width="200" height="200">
+        <h2>Alaska</h2>
+        <p>Frisch und besonders.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Alaska">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+    <div class="produkt">
+        <img src="./public/mss_pizza-boston-klein-o-17cm_7zh.png" alt="Bosten" width="200" height="200">
+        <h2>Bosten</h2>
+        <p>Deftig im Geschmack.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Bosten">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+    <div class="produkt">
+        <img src="./public/mss_pizza-caribbean-klein-o-17cm_pvv.png" alt="Caribean" width="200" height="200">
+        <h2>Caribean</h2>
+        <p>Exotisch inspiriert.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Caribean">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+    <div class="produkt">
+        <img src="./public/mss_pizza-veggie-klein-o-17cm_myb.png" alt="Veggie" width="200" height="200">
+        <h2>Veggie</h2>
+        <p>Voller Gemüse.</p> 
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Veggie">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+    <div class="produkt">
+        <img src="./public/mss_pizza-champignon-klein-o-17cm_kmw.png" alt="Champignon" width="200" height="200">
+        <h2>Champignon</h2>
+        <p>Mit frischen Pilzen.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Champignon">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-farmer-klein-o-17cm_dab.png" alt="Farmer" width="200" height="200">
+        <h2>Farmer</h2>
+        <p>Herzhaft vom Land.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Farmer">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-hawaii-klein-o-17cm_j8u.png" alt="Hawai" width="200" height="200">
+        <h2>Hawai</h2>
+        <p>Mit Ananas und Schinken.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Hawai">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+        </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-hot-chili-scharf-klein-o-17cm_mgv.png" alt="Hot Chili" width="200" height="200">
+        <h2>Hot Chili</h2>
+        <p>Feurig scharf.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Hot Chili">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-kentucky-klein-o-17cm_4qo.png" alt="Kentacky" width="200" height="200">
+        <h2>Kentacky</h2>
+        <p>Mit würzigem Huhn.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Kentacky">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-miami-klein-o-17cm_hld.png" alt="Miami" width="200" height="200">
+        <h2>Miami</h2>
+        <p>Leicht und frisch.</p>
+       <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Miami">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-nevada-klein-o-17cm_s3t.png" alt="Nevada" width="200" height="200">
+        <h2>Nevada</h2>
+        <p>Kräftig im Geschmack.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Nevada">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-new-york-klein-o-17cm_2or.png" alt="New York" width="200" height="200">
+        <h2>New York</h2>
+        <p>Der Klassiker aus USA.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="New York">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-pan-spezial-klein-o-17cm_lgp.png" alt="Pan Spizial" width="200" height="200">
+        <h2>Pan Spizial</h2>
+        <p>Hausgemacht und knusprig.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Pan Spizial">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-pastirma-klein-o-17cm_spj.png" alt="Pastirma" width="200" height="200">
+        <h2>Pastirma</h2>
+        <p>Mit Rinderpastirma.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Pastirma">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-r-klein-o-17cm_pyu.png" alt="Rodeo" width="200" height="200">
+        <h2>Rodeo</h2>
+        <p>Herzhaft und rauchig.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Rodeo">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-spicy-chicken-klein-o-17cm_0ju.png" alt="spicy-chicken" width="200" height="200">
+        <h2>Hänchen</h2>
+        <p>Mit zartem Huhn.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Hänchen">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-sucuk-klein-o-17cm_ml0.png" alt="Sucuk" width="200" height="200">
+        <h2>Sucuk</h2>
+        <p>Mit türkischer Knoblauchwurst.</p>
+       <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Sucuk">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-texas-klein-o-17cm_quz.png" alt="Texas" width="200" height="200">
+        <h2>Texas</h2>
+        <p>Kräftig und würzig.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Texas">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-thunfisch-klein-o-17cm_e8m.png" alt="Thunfisch" width="200" height="200">
+        <h2>Thunfisch</h2>
+        <p>Mit frischem Fisch.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Thunfisch">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>
+    </div>
+
+    <div class="produkt">
+        <img src="./public/mss_pizza-western-klein-o-17cm_pud.png" alt="Western" width="200" height="200">
+        <h2>Western</h2>
+        <p>Rustikal und deftig.</p>
+        <!-- Größen -->
+        <form id="pizzaForm" action="extras.html" method="get">
+        <input type="hidden" name="pizza" value="Western">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>    
+    </div>
+
+
+
+
+
+
+</main>
+
+ <h3>Pasta</h3>
+  <main class="produkte">
+      <div class="produkt">
+        <img src="./public/mss_tagliatelle-broccoli-chicken_ypl.png" alt="Broccoli-chicken" width="200" height="200">
+        <h2>Broccoli chicken</h2>
+        <form id="pizzaForm" action="extrasN.html" method="get">
+        <input type="hidden" name="pizza" value="Broccoli chicken">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>   
+      </div>
+      <div class="produkt">
+        <img src="./public/mss_tortellini-tuna_ywk.png" alt="Tortellini-tuna" width="200" height="200">
+        <h2>Tortellini tuna</h2>
+        <form id="pizzaForm" action="extrasN.html" method="get">
+        <input type="hidden" name="pizza" value="Tortellini-tuna">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>    
+      </div>
+      
+      <div class="produkt">
+        <img src="./public/mss_penne-veggie_v2s.png" alt="penne-veggie" width="200" height="200">
+        <h2>penne-veggie</h2>
+        <form id="pizzaForm" action="extrasN.html" method="get">
+        <input type="hidden" name="pizza" value="penne-veggie">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>    
+      </div>
+        <div class="produkt">
+        <img src="./public/mss_tagliatelle-cherry-bacon_f1j.png" alt="Cherry-bacon" width="200" height="200">
+        <h2>Cherry-bacon</h2>
+        <form id="pizzaForm" action="extrasN.html" method="get">
+        <input type="hidden" name="pizza" value="Cherry-bacon">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>    
+      </div>
+      
+  </main>
+  </main>
+  <h3>Salat</h3>
+  <main class="produkte">
+    <div class="produkt">
+        <img src="./public/mss_gemischter-salat_ayp.png" alt="gemischter-salat" width="200" height="200">
+        <h2>Gemischter salat</h2>
+        <form id="pizzaForm" action="extrasS.html" method="get">
+        <input type="hidden" name="pizza" value="Gemischter salat">   
+
+        <button type="submit">Extras & Saucen wählen</button>
+        </form>    
+      </div>
+      <div class="produkt">
+        <img src="./public/mss_chicken-salat_ozr.png" alt="chicken-salat" width="200" height="200">
+        <h2>chicken-salat</h2>
+        <form id="pizzaForm" action="extrasS.html" method="get">
+        <input type="hidden" name="pizza" value="chicken-salat">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>   
+      </div>
+      
+      <div class="produkt">
+        <img src="./public/mss_thunfisch-salat_4nd.png" alt="thunfisch-salat" width="200" height="200">
+        <h2>Thunfisch-salat</h2>
+        <form id="pizzaForm" action="extrasS.html" method="get">
+        <input type="hidden" name="pizza" value="Thunfisch-salat">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>   
+      </div>
+        <div class="produkt">
+        <img src="./public/mss_griechischer-salat_kuy (1).png" alt="Griechischer-salat" width="200" height="200">
+        <h2>Griechischer-salat</h2>
+        <form id="pizzaForm" action="extrasS.html" method="get">
+        <input type="hidden" name="pizza" value="Griechischer-salat">   
+
+        <button type="submit">Grössen & Extras & Saucen wählen</button>
+        </form>   
+      </div>
+      
+  </main>
+
+
+
+  <!-- Warenkorb -->
+  <section id="warenkorb">
+    <h2 id="warenkorb">🛒 Warenkorb</h2>
+    <section id="Articles">
+
+    </section>
+  </section>
+
+  <section>
+    <button id="bestellbutton" > jetzt Bestellen </button>
+  </section>
+
+<script src="script.js"></script>
+<script></script>
+</body>
+</html>
