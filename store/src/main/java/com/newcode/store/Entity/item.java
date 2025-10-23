@@ -122,5 +122,21 @@ public class item {
     public void setSauce(List<String> sauce) {
         this.sauce = sauce;
     }
+
+    @Override
+    public String toString() {
+        return "item{" +
+                "id=" + id +
+                ", type='" + type + '\'' +
+                ", name='" + name + '\'' +
+                ", preis=" + preis +
+                ", bild='" + bild + '\'' +
+                ", grosse='" + grosse + '\'' +
+                ", extras=" + extras +
+                ", extras1=" + extras1 +
+                ", pizzasauce='" + pizzasauce + '\'' +
+                ", sauce=" + sauce +
+                '}';
+    }
 }
 

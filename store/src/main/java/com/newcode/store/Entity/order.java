@@ -48,5 +48,14 @@ public class order {
     public void setItems(List<item> items) {
         this.items = items;
     }
+
+    @Override
+    public String toString() {
+        return "order{" +
+                "id=" + id +
+                ", kunde=" + kunde +
+                ", items=" + items +
+                '}';
+    }
 }
 

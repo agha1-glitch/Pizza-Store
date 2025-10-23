@@ -63,5 +63,16 @@ public class kunde {
     public void setBestellung(String bestellung) {
         this.bestellung = bestellung;
     }
+
+    @Override
+    public String toString() {
+        return "kunde{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", tel='" + tel + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", bestellung='" + bestellung + '\'' +
+                '}';
+    }
 }
 
